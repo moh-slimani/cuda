@@ -5,7 +5,10 @@
 
 using namespace std;
 
+__global__ void mykernel(void) {}
+
 int main() {
+  mykernel<<<1,1>>>();
   cout << "hellow world" << endl;
   return 0;
 }
